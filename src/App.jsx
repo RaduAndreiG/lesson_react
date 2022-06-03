@@ -4,8 +4,6 @@ import { COLORS } from './vars'
 import ArrowSVG from './assets/Arrow.svg'
 import ReactMarkdown from 'react-markdown'
 
-import showdown from 'showdown'
-import parse from 'html-react-parser'
 import test from './test.md'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
@@ -63,6 +61,10 @@ const App = () => {
 						>
 							<StyledReactMarkdown
 								children={split[i]}
+								style={{
+									width: '100%',
+									backgroundColor: 'red',
+								}}
 								components={{
 									// code: ({ node, ...props }) => (
 									// 	<span
@@ -70,6 +72,38 @@ const App = () => {
 									// 		{...props}
 									// 	/>
 									// ),
+									code({
+										node,
+										inline,
+										className,
+										children,
+										...props
+									}) {
+										const match = /language-(\w+)/.exec(
+											className || ''
+										)
+										return !inline && match ? (
+											<SyntaxHighlighter
+												children={String(
+													children
+												).replace(/\n$/, '')}
+												customStyle={{
+													maxHeight: '200px',
+												}}
+												style={nightOwl}
+												language={match[1]}
+												PreTag='div'
+												{...props}
+											/>
+										) : (
+											<code
+												className={className}
+												{...props}
+											>
+												{children}
+											</code>
+										)
+									},
 									h1: ({ node, ...props }) => (
 										<h1
 											style={{ fontSize: '2em' }}
@@ -269,6 +303,7 @@ const InlineCode = styled.span`
 const StyledReactMarkdown = styled(ReactMarkdown)`
 	display: block;
 	text-align: center;
+	width: 100%;
 `
 
 export default App
