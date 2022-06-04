@@ -1,0 +1,50 @@
+Salut, in videoclipul de astazi o sa vorbim despre HTML.
+
+1. Pentru inceput vom avea o scurta introducere peste care v-as ruga sa nu dati skip deoarece este o parte interesanta.
+
+HTML, sau HyperText Markup Language este un limbaj de "marcare" utilizat pentru crearea paginilor web. Probabil ati remarcat ca nu l-am denumit limbaj de programare pentru ca nu este unul din mai multe motive, am sa va spun 1 dintre ele, cel mai important. HTML nu contine, ceea ce se numeste "programming logic", adica nu contine conditii precum "IF/ELSE", nu poate evalua expresii sau sa faca ecuatii matematice. HTML descrie informatia browser-ului, acesta intrepretand-o si afisand ce i-a fost descris.
+
+LINK: https://ischool.syr.edu/why-html-is-not-a-programming-language/
+
+2. Fisierul HTML
+
+Acum am sa va arat ceva ce la inceput pe mine m-a socat. Putem crea un website fara a instala nimic (presupunand ca toate sistemele de operare au un browser si un text editor). Tot ce trebuie sa facem este sa cream un fisier "\*.html" si sa il deschidem. Aceste este un website. Evident, deoarece nu contine nimic, el nu va afisa nimic. Pentru a va convinge ca acest lucru este adevarat, voi adauga putin cod HTML astfel incat sa intaresc afirmatia cum ca asta ar fi un website.
+
+Dar aici am dat de prima problema, unde adaug codul ?
+
+In introducere la sectiunea Requirements am amintit de un Editor de text. Fiecare dintre noi, atat timp cat are un sistem de operare va avea si un editor de text. Fie ca este Notepad de la windows sau Apple's TextEdit app, evident de la macOS. In continuare va voi arata cum sa deschideti fisierul .html intr-un text editor.
+
+RIGHT CLICK on the .html file => Open With => Choose another app => More Apps => Notepad
+
+Si ni s-a deschis un NotePad gol, ceva la care ne-am asteptat intr-o anumita masura avand in vedere ca site-ul era gol, nu continea nimic.
+Aici putem scrie orice si ne va aparea pe site, haideti sa incercam.
+Hmm, n-a aparut nimic.... asta pentru ca dupa ce terminam ce vrem sa afisam pe website trebuie sa salvam fisierul.
+
+Cum facem asta ? (salvam fisierul)
+Contrar modului in care la socoala am fost invatati, cautatul pe internet nu este o rusine pentru un programator, ba chiar acesta este unul dintre cele mai importante skill-uri pe care un programator trebuie sa le dezvolte. Astfel, in continuare te rog sa pui pauza si sa cauti pe internet cum salvezi un fisier in functie de sistemul de operare pe care il ai. (de preferat in engleza sa cauti)
+
+... (fac pauza 2-3 secunde)
+
+Sper ca nu ti-ai smuls prea multe fire de par din cap incercand sa afisezi pe ecran text-ul din document. Probabil toata lumea care a cautat "how to save a file" a gasit 2 metode, File > Save sau shortcut-ul CTRL+S sau Command+s dar ce ne facem ca nu functioneaza ....... sau functioneaza ?
+
+In functie de cat de mult timp ai petrecut incercand sa salvezi acest fisier, ai primit una dintre cele mai importante lectii de programare a carei concluzii este destul de importanta si nu am sa o enunt eu, am sa va rog pe voi sa o faceti, dar nu inainte sa puteti trage o concluzie deoarece cu informatiile pe care le aveti acum nu puteti concluziona nimic.
+
+Am ramas la intrebarea daca salvarea fisierului a functionat sau nu ? deoarece pe ecran nu avem afisat nimic. Am sa va raspund eu la intrebarea asta si sa va asigur ca daca aveati fereastra de NotePad Selectata si ati apasat CTRL+S, fisierul a fost salvat, puteti verifica asta prin \* care apare sau nu sus langa numele fisierului, daca nu apare inseamna ca fisierul a fost salvat.
+O intrebare fireasca este: Daca fisierul a fost salvat atunci de ce nu ne apare nimic pe website ? (o intrebare care ajuta la tragerea concluziei finale)
+Trebuie sa-i dam refresh site-ului din browser astfel incat sa incarce ultimele salvari pe care le-am facut. Puteti cauta din nou cum dam refresh unei pagini web sau am sa va zic eu una dintre modalitati, mentionand ca in functie de shortcut-ul pe care l-ati gasit probabil este un alt tip de refresh, exista hot refresh sau hard refresh, diferenta dintre ele fiind ca hard refresh-ul nu tine cont de content-ul din memoria cache. Astfel, putem da refresh asigurandu-ne ca browser-ul este selectat, apasand simultan CTRL+R.
+In sfarsit dupa o perioada de timp mai lunga sau mai scurta, in functie de cat de mult v-ati chinuit puteti trage concluzia. Am sa va rog sa puneti pauza acestui videoclip si sa formulati voi concluzia intr-un comentariu
+(astept 2 secunde).
+Concluzia trasa de noi o veti gasi pe instagram-ul nostru, @adxiom, aveti un link in descriere. De asemenea va rugam sa dati le spuneti si prietenilor despre acest tutorial deoarece in programare este foarte important sa faceti parte dintr-o echipa. Pentru asta vom deschide in curand si un canal de discord unde ne puteti lasa intrebarile pe care le aveti sau sa cereti ajutorul in caz ca v-ati blocat undeva.
+
+Concluzia:
+"Unele bug-uri/probleme pot fi mai complexe decat ne asteptam la inceput si, ca programatori, trebuie sa fim dispusi sa investim oricat timp este nevoie pentru a le rezolva ~sau sa intrebam un prieten :) ~."
+"He who asks a question is a fool for five minutes; he who does not ask a question remains a fool forever."
+In 99.99% dintre cazuri nu esti primul care a intampinat acea problema si nici ultimul.
+
+Nici nu ti-ai dat seama cand ai facut primul pas in programare. Chiar daca probabil nu ai gasit solutia problemei, ai reusit sa tragi o concluzie extrem de importanta pentru viitor.
+
+...Sa REVENIM...
+
+Am creat un website si am adaugat niste text in el. Dar website-urile nu sunt decat despre texte.
+
+TAG-uri

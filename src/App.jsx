@@ -4,7 +4,7 @@ import { COLORS } from './vars'
 import ArrowSVG from './assets/Arrow.svg'
 import ReactMarkdown from 'react-markdown'
 
-import test from './test.md'
+import test from './lessons/test.md'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism'
