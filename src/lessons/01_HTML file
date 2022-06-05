@@ -1,5 +1,7 @@
 Salut, in videoclipul de astazi o sa vorbim despre HTML.
 
+Prima data ii invat sa instaleze Chrome si dupa alternativa, sa-l faca up-to-date.
+
 1. Pentru inceput vom avea o scurta introducere peste care v-as ruga sa nu dati skip deoarece este o parte interesanta.
 
 HTML, sau HyperText Markup Language este un limbaj de "marcare" utilizat pentru crearea paginilor web. Probabil ati remarcat ca nu l-am denumit limbaj de programare pentru ca nu este unul din mai multe motive, am sa va spun 1 dintre ele, cel mai important. HTML nu contine, ceea ce se numeste "programming logic", adica nu contine conditii precum "IF/ELSE", nu poate evalua expresii sau sa faca ecuatii matematice. HTML descrie informatia browser-ului, acesta intrepretand-o si afisand ce i-a fost descris.
@@ -32,9 +34,10 @@ In functie de cat de mult timp ai petrecut incercand sa salvezi acest fisier, ai
 Am ramas la intrebarea daca salvarea fisierului a functionat sau nu ? deoarece pe ecran nu avem afisat nimic. Am sa va raspund eu la intrebarea asta si sa va asigur ca daca aveati fereastra de NotePad Selectata si ati apasat CTRL+S, fisierul a fost salvat, puteti verifica asta prin \* care apare sau nu sus langa numele fisierului, daca nu apare inseamna ca fisierul a fost salvat.
 O intrebare fireasca este: Daca fisierul a fost salvat atunci de ce nu ne apare nimic pe website ? (o intrebare care ajuta la tragerea concluziei finale)
 Trebuie sa-i dam refresh site-ului din browser astfel incat sa incarce ultimele salvari pe care le-am facut. Puteti cauta din nou cum dam refresh unei pagini web sau am sa va zic eu una dintre modalitati, mentionand ca in functie de shortcut-ul pe care l-ati gasit probabil este un alt tip de refresh, exista hot refresh sau hard refresh, diferenta dintre ele fiind ca hard refresh-ul nu tine cont de content-ul din memoria cache. Astfel, putem da refresh asigurandu-ne ca browser-ul este selectat, apasand simultan CTRL+R.
+
 In sfarsit dupa o perioada de timp mai lunga sau mai scurta, in functie de cat de mult v-ati chinuit puteti trage concluzia. Am sa va rog sa puneti pauza acestui videoclip si sa formulati voi concluzia intr-un comentariu
 (astept 2 secunde).
-Concluzia trasa de noi o veti gasi pe instagram-ul nostru, @adxiom, aveti un link in descriere. De asemenea va rugam sa dati le spuneti si prietenilor despre acest tutorial deoarece in programare este foarte important sa faceti parte dintr-o echipa. Pentru asta vom deschide in curand si un canal de discord unde ne puteti lasa intrebarile pe care le aveti sau sa cereti ajutorul in caz ca v-ati blocat undeva.
+Concluzia trasa de noi o veti gasi pe instagram-ul nostru, @adxiom, aveti un link in descriere. De asemenea va rugam sa le spuneti si prietenilor despre acest tutorial deoarece in programare este foarte important sa faceti parte dintr-o echipa. Pentru asta vom deschide in curand si un canal de discord unde ne puteti lasa intrebarile pe care le aveti sau sa cereti ajutorul in caz ca v-ati blocat undeva.
 
 Concluzia:
 "Unele bug-uri/probleme pot fi mai complexe decat ne asteptam la inceput si, ca programatori, trebuie sa fim dispusi sa investim oricat timp este nevoie pentru a le rezolva ~sau sa intrebam un prieten :) ~."
@@ -47,4 +50,52 @@ Nici nu ti-ai dat seama cand ai facut primul pas in programare. Chiar daca proba
 
 Am creat un website si am adaugat niste text in el. Dar website-urile nu sunt decat despre texte.
 
-TAG-uri
+TAG-uri @@@@@@@@@@@@@@@@@@@@@@@
+
+Ce sunt tag-urile ?
+
+Voi da o definitie nu "din dictionar", ci una care are mai mult sens si pentru cei incepatori.
+Definitia generala a tag-ului:
+<TAG></TAG> sau <TAG> - unele tag-uri nu trebuie inchise
+Sunt mai multe tipuri de tag-uri, cel mai comun si cel despre care vom vorbi cel mai mult este cel care "anunta" ce fel de element va fi adaugat in website. Pentru a va arata cat mai multe exemple de tag-uri va voi arata template-ul oricarei aplicatii web.
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Document</title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+<!DOCTYPE html>
+
+toate documentele html trebuie sa inceapa cu declararea doctype-ului.
+Declararea nu este un tag, este doar o informatie despre ce tip de document sa se astepte
+
+In HTML5, declararea este simpla:
+
+<!DOCTYPE html>
+
+In HTML 4.01:
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+dar nu este important, am facut o simpla comparatie care sa ajute la intelegerea liniei <!DOCTYPE html>
+
+<html>
+
+tag-ul html reprezinta radacina, root-ul, (baza) oricarui document HTML
+
+Dupa cum putem observa, in template, tag-ul <html> are inca o parte, lang='en' care se numeste atribut, tag-urile pot avea unul sau mai multe atribute despre care vom vorbi in viitor.
+Nota: este important ca fiecare aplicatie Web sa aibe atributul "lang" pentru a ajuta motoarele de cautare si browserele si a le oferi informatii despre limba site-ului.
+
+///
+
+Acum ca vi l-am aratat, probabil va intrebati cum mergea si fara el ? Mergea din cauza Chrome-ului, acesta completeaza automat cu ce lipseste, desi pe alte browsere mai vechi s-ar putea sa nu mearga, de-asta v-am facut tutorialul de instalare al chrome-ului.
+
+---
+
+De ce mai devreme am putut sa rulam un website care nu continea nici doctype nici tag-ul html ?
+L-am putut rula datorita browser-ului Chrome, care este up to date si completeaza singur cu ce lipseste.
