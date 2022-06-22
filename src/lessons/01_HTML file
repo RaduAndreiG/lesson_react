@@ -10,7 +10,7 @@ LINK: https://ischool.syr.edu/why-html-is-not-a-programming-language/
 
 2. Fisierul HTML
 
-Acum am sa va arat ceva ce la inceput pe mine m-a socat. Putem crea un website fara a instala nimic (presupunand ca toate sistemele de operare au un browser si un text editor). Tot ce trebuie sa facem este sa cream un fisier "\*.html" si sa il deschidem. Aceste este un website. Evident, deoarece nu contine nimic, el nu va afisa nimic. Pentru a va convinge ca acest lucru este adevarat, voi adauga putin cod HTML astfel incat sa intaresc afirmatia cum ca asta ar fi un website.
+Acum am sa va arat ceva ce la inceput pe mine m-a socat. Putem crea un website fara a instala nimic (presupunand ca toate sistemele de operare au un browser si un text editor). Tot ce trebuie sa facem este sa cream un fisier "\*.html" si sa il deschidem. Acesta este un website. Evident, deoarece nu contine nimic, el nu va afisa nimic. Pentru a va convinge ca acest lucru este adevarat, voi adauga putin cod HTML astfel incat sa intaresc afirmatia cum ca asta ar fi un website.
 
 Dar aici am dat de prima problema, unde adaug codul ?
 
@@ -27,11 +27,11 @@ Contrar modului in care la socoala am fost invatati, cautatul pe internet nu est
 
 ... (fac pauza 2-3 secunde)
 
-Sper ca nu ti-ai smuls prea multe fire de par din cap incercand sa afisezi pe ecran text-ul din document. Probabil toata lumea care a cautat "how to save a file" a gasit 2 metode, File > Save sau shortcut-ul CTRL+S sau Command+s dar ce ne facem ca nu functioneaza ....... sau functioneaza ?
+Sper ca nu ti-ai smuls prea multe fire de par din cap incercand sa afisezi pe ecran text-ul din document. Probabil toata lumea care a cautat "how to save a file" a gasit 2 metode, File > Save sau shortcut-ul CTRL+S sau Command+s dar ce ne facem ca nu functioneaza, nu salveaza nimic din moment ce nu ne apare nimic pe site ....... sau functioneaza ?
 
 In functie de cat de mult timp ai petrecut incercand sa salvezi acest fisier, ai primit una dintre cele mai importante lectii de programare a carei concluzii este destul de importanta si nu am sa o enunt eu, am sa va rog pe voi sa o faceti, dar nu inainte sa puteti trage o concluzie deoarece cu informatiile pe care le aveti acum nu puteti concluziona nimic.
 
-Am ramas la intrebarea daca salvarea fisierului a functionat sau nu ? deoarece pe ecran nu avem afisat nimic. Am sa va raspund eu la intrebarea asta si sa va asigur ca daca aveati fereastra de NotePad Selectata si ati apasat CTRL+S, fisierul a fost salvat, puteti verifica asta prin \* care apare sau nu sus langa numele fisierului, daca nu apare inseamna ca fisierul a fost salvat.
+Am ramas la intrebarea daca salvarea fisierului a functionat sau nu ? deoarece pe ecran nu avem afisat nimic. Am sa va raspund eu la intrebarea asta si sa va asigur ca daca aveati fereastra de NotePad Selectata si ati apasat CTRL+S, fisierul a fost salvat, puteti verifica asta prin \* care apare, sau nu, sus langa numele fisierului, daca nu apare inseamna ca fisierul a fost salvat.
 O intrebare fireasca este: Daca fisierul a fost salvat atunci de ce nu ne apare nimic pe website ? (o intrebare care ajuta la tragerea concluziei finale)
 Trebuie sa-i dam refresh site-ului din browser astfel incat sa incarce ultimele salvari pe care le-am facut. Puteti cauta din nou cum dam refresh unei pagini web sau am sa va zic eu una dintre modalitati, mentionand ca in functie de shortcut-ul pe care l-ati gasit probabil este un alt tip de refresh, exista hot refresh sau hard refresh, diferenta dintre ele fiind ca hard refresh-ul nu tine cont de content-ul din memoria cache. Astfel, putem da refresh asigurandu-ne ca browser-ul este selectat, apasand simultan CTRL+R.
 
@@ -88,8 +88,16 @@ dar nu este important, am facut o simpla comparatie care sa ajute la intelegerea
 
 tag-ul html reprezinta radacina, root-ul, (baza) oricarui document HTML
 
-Dupa cum putem observa, in template, tag-ul <html> are inca o parte, lang='en' care se numeste atribut, tag-urile pot avea unul sau mai multe atribute despre care vom vorbi in viitor.
-Nota: este important ca fiecare aplicatie Web sa aibe atributul "lang" pentru a ajuta motoarele de cautare si browserele si a le oferi informatii despre limba site-ului.
+Dupa cum putem observa, in template, tag-ul <html> are inca o parte, lang='en' care se numeste atribut, tag-urile pot avea unul sau mai multe atribute despre care vom vorbi in viitor. Dupa cum puteti observa, tag-ul <html> se si inchide mai jos, nu toate tag-urile trebuie inchise, vom vedea exemple in viitor.
+Nota: este important ca fiecare aplicatie Web sa aibe atributul "lang" pentru a ajuta motoarele de cautare si browserele si a le oferi informatii despre limba in care site-ul este facut pentru a fi citit.
+
+<head>
+
+Tag-ul <head> este un tag folosit pentru a ii oferi browser-ului informatii despre site, informatii care nu vor aparea pe site, cum ar fi: titlul site-ului, setul de caractere folosit, legaturi intre fisierele .html si cele .css, sau intre cele .html si cele .js
+
+<body>
+
+Tag-ul <body></body> este un tag in interiorul caruia va fi scris tot site-ul, toate paragrafele, toate imaginile, toate butoanele, etc. vor fi in interiorul acestui tag.
 
 ///
 
