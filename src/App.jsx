@@ -4,7 +4,7 @@ import { COLORS } from './vars'
 import ArrowSVG from './assets/Arrow.svg'
 import ReactMarkdown from 'react-markdown'
 
-import test from './lessons/test.md'
+import test from './lessons/00_Generals.md'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism'
@@ -33,7 +33,7 @@ const App = () => {
 	// console.log(split)
 
 	split.push(
-		`# You are doing awesome!  You have completed the course!
+		`# You are doing awesome!  You have completed today's lesson!
 		`
 	) // keep going, you are doing great!
 
@@ -106,12 +106,37 @@ const App = () => {
 									},
 									h1: ({ node, ...props }) => (
 										<h1
-											style={{ fontSize: '2em' }}
+											style={{
+												fontSize: '2em',
+												fontWeight: 700,
+												lineHeight: '1.2em',
+											}}
+											{...props}
+										/>
+									),
+									h2: ({ node, ...props }) => (
+										<h1
+											style={{
+												fontSize: '1.5em',
+												fontWeight: 700,
+												marginBottom: '20px',
+											}}
 											{...props}
 										/>
 									),
 									em: ({ node, ...props }) => (
 										<InlineCode {...props} />
+									),
+									strong: ({ node, children, ...props }) => (
+										<StyledBoldSpan
+											{...props}
+											style={{
+												fontWeight: 800,
+												display: 'inline',
+											}}
+										>
+											{children}
+										</StyledBoldSpan>
 									),
 								}}
 							/>
@@ -289,6 +314,8 @@ const SliderItem = styled.div`
 	align-items: center;
 	transition: 1s ease-out;
 	padding: 0px 50px;
+	font-size: 1.1em;
+	line-height: 1.5em;
 `
 
 const InlineCode = styled.span`
@@ -304,6 +331,11 @@ const StyledReactMarkdown = styled(ReactMarkdown)`
 	display: block;
 	text-align: center;
 	width: 100%;
+`
+const StyledBoldSpan = styled.p`
+	display: inline;
+	font-weight: 800;
+	color: ${COLORS.pink};
 `
 
 export default App
