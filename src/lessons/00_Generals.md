@@ -233,3 +233,176 @@ Un *tag HTML* este o bucata de cod care indica **inceputul** si **sfartsitul** u
 ---
 
 Tag-urile HTML ajuta browserele la conversia documentelor HTML in pagini web.
+
+|
+
+Sunt mai multe tipuri de tag-uri, cel mai comun si cel despre care vom vorbi cel mai mult este cel care "anunta" ce fel de element va fi adaugat in website.  
+Pentru a va da cat mai multe exemple de tag-uri va voi arata template-ul oricarei aplicatii web, fara care, nu functioneaza.
+
+|
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+    </body>
+</html>
+```
+
+|
+
+# `<!DOCTYPE html>`
+
+---
+
+Toate documentele HTML trebuie sa inceapa cu declararea doctype-ului, acest tag ii ofera browser-ului informatii despre ce **versiune HTML** va utiliza site-ul.  
+Site-ul poate functiona si fara dar in functie de cat de vechi este browser-ul cu ajutorul caruia rulam site-ul si ce tag-uri folosim, s-ar putea sa aibe bug-uri.
+
+|
+
+# `<html>...</html>`
+
+---
+
+tag-ul **html** reprezinta radacina, **root**-ul, (baza) oricarui document HTML  
+
+Dupa cum putem observa, in template, tag-ul *<html>* are inca o parte, lang='en' care se numeste **atribut**, tag-urile pot avea **unul sau mai multe atribute** despre care vom vorbi in viitor.  
+Dupa cum puteti observa, tag-ul <html> se si inchide mai jos, nu toate tag-urile trebuie inchise, vom vedea exemple in viitor.
+
+|
+
+# `<head>...</head>`
+
+---
+
+Tag-ul *head* este un tag folosit pentru a ii oferi browser-ului **informatii** despre site, informatii care nu vor aparea pe site, cum ar fi: **titlul** site-ului, setul de caractere folosit, legaturi intre fisierele .html si cele .css, sau intre cele .html si cele .js, etc.
+
+|
+
+# `<title>...</title>`
+
+---
+
+Tag-ul acesta este folosit pentru a ii da un **titlu website**-ului care se vede sus, in bara de navigare, vom testa asta imediat ce vom trece inapoi la text editor.
+
+|
+
+# `<body>...</body>`
+
+---
+
+In interiorul acestui tag va fi scris tot site-ul, toate paragrafele, toate imaginile, toate butoanele, etc. vor fi in interiorul acestui tag, simplificat, toata partea vizuala.
+
+|
+
+Ok, acum ca stim toate astea, urmeaza intrebarea fireasca:
+
+---
+
+|
+
+# 3.1 - Alte Tag-uri utile
+
+|
+
+* *<h1>Titlu</h1>* - Folosit pentru titluri  
+
+* *<h2>Subtitlu</h2>* - Folosit pentru subtitluri  
+
+* *<p>Paragraf</p>* - Folosit pentru paragrafe  
+
+* *<div>...</div>* - Folosit pentru gruparea celorlalte elemente  
+
+* *<img src="" alt="">* - Adaugarea unei imagini  
+
+* *<a href="">Adxiom</a>* - Adaugarea unui link  
+
+* *<button>Click</button>* - Adaugarea unui buton  
+
+* Si altele
+
+|
+
+Toate tag-urile pot fi **stilizate**, in foarte multe moduri, ex: schimbam culoarea font-ului, il facem bold, sau schimbarea culorii unui div, aranjarea lor unul langa altul sau sub altul, sunt o multime de lucruri care pot fi facute astfel incat sa le schimbam aspectul, folosind *CSS*, dar despre el vom vorbi in alta lectie.
+
+|
+
+# Haide dupa atata teorie sa punem si in practica
+
+|
+
+Nu ne-am mai atins de acel **text editor** de cand am afisat un text pe website, de cand nici **nu stiam de existenta tag-urilor** si ar cam fi cazul.
+
+|
+
+Mai devreme am zis ca toate website-urile **trebuie sa aibe acel template**. Daca **TREBUIE**, atunci m-am contrazis singur prin faptul ca am afisat text-ul pe website fara nici un tag *<DOCTYPE>* sau *<html></html>* sau *<body></body>*. 
+
+|
+
+Totul functioneaza multumita **magiei** pe care *Google Chrome* o face, **completand** singur cu tag-urile care lipsesc, daca o sa intram in tool-ul de **inspect** al site-ului o sa vedem aceasta auto completare.   
+
+---
+
+Versiunile mai vechi nu fac asta insa aici va trebui: fie sa ma credeti pe cuvant, fie sa testati, dar nefiind important eu nu o sa va arat acest lucru.
+
+|
+
+Ok, acum vom inlocui text-ul cu acel template al oricarui website.
+
+|
+
+Si.. functioneaza, acum **am ramas dator** cu testarea tag-ului `<title>...</title>`, haideti sa vedem ce face.  
+
+---
+
+Este valabil ca tot timpul **cand vreau sa verific** ce am schimbat voi salva fisierul **CTRL+S** sau **Command+S** si **CTRL+R** in browser.
+
+|
+
+Ok, am testat tag-ul `<title>...</title>`, acum haideti sa vedem niste exemple cu **alte tag-uri**.
+
+|
+
+Am sa le iau in ordinea in care le-am scris si am sa le testez.
+ 
+ ---
+
+De mentionat este ca toate tag-urile pe care am sa le incerc in videoclip-ul acesta **vor fi pentru body**-ul paginii web deoarece **toate vor aparea pe website** si in general regula este ca orice apare pe website va fi scris in interiorul tag-ului `<body>...</body>`.
+
+|
+
+# `<h1>Titlu</h1>`
+
+---
+
+Dupa cum vedeti este mult **mai mare** si **mai bold-uit** decat un text normal.  
+ Acesti parametri precum **marimea fontului** sau **culoarea** sau **orice altceva** ne putem inchipui, pot fi modificati cu *CSS* astfel incat sa arate **fix cum ne dorim**. 
+
+ |
+
+ # `<h2>Subtitlu</h2>`
+
+ ---
+
+ Fiind destinat **subtitlurilor**, putem intui ca acest tag va afisa pe ecran un text putin **mai mic decat** *<h1></h1>* pentru a creea aceasta **ierarhie intre titlu si subtitlu**.
+
+ |
+
+ # `<p>Paragraf</p>`
+
+ ---
+
+ Acesta este un paragraf, de obicei text-ul care nu este nici titlu, nici subtitlu trebuie pus intr-un paragraf pentru a il putea **edita**. Dupa cum vedeti, merge pus text si fara tag-ul *<p>...</p>*, dar nu va putea fi editat atat de usor.
+
+|
+
+ # `<div>...</div>`
+
+ ---
+
+ Div-ul este un fel de cutie in care putem grupa mai multe elemente. 
+
+ Probabil nu se vede nimic diferit fata de subtitlul si paragraful negrupate, dar, pentru a va convinge, am sa folosesc putin **CSS**, pentru a fi mai clar ca sunt grupate, si am sa ii dau o **culoare de background rosie**. Modul acesta de a scrie CSS-ul se numeste **inline**, si nu este o practica foarte buna, in general **se face un fisier separat** in care sa tinem tot CSS-ul. Vom vedea in videoclipul urmator.

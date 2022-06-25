@@ -88,7 +88,7 @@ const App = () => {
 													children
 												).replace(/\n$/, '')}
 												customStyle={{
-													maxHeight: '200px',
+													maxHeight: '300px',
 												}}
 												style={nightOwl}
 												language={match[1]}
