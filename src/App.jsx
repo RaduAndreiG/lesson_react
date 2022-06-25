@@ -323,7 +323,8 @@ const InlineCode = styled.span`
 	margin: 0 0.4em;
 	padding: 5px;
 	border-radius: 5px;
-	color: ${COLORS.pink};
+	font-weight: 800;
+	color: ${COLORS.blue};
 	background-color: ${COLORS.lightBackgoundCard};
 `
 
