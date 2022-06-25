@@ -406,3 +406,87 @@ Dupa cum vedeti este mult **mai mare** si **mai bold-uit** decat un text normal.
  Div-ul este un fel de cutie in care putem grupa mai multe elemente. 
 
  Probabil nu se vede nimic diferit fata de subtitlul si paragraful negrupate, dar, pentru a va convinge, am sa folosesc putin **CSS**, pentru a fi mai clar ca sunt grupate, si am sa ii dau o **culoare de background rosie**. Modul acesta de a scrie CSS-ul se numeste **inline**, si nu este o practica foarte buna, in general **se face un fisier separat** in care sa tinem tot CSS-ul. Vom vedea in videoclipul urmator.
+
+|
+
+# `<img src="./image.png" alt="Adxiom logo">`
+
+Acesta este un tag care ne ajuta sa adaugam imagini pe site. Dupa cum vedeti acesta contine si doua **atribute**, *src = "..."* valoarea caruia va fi link-ul imaginii, vom discuta mai pe larg in videoclip-urile urmatoare, si *alt = "..."*, valoarea caruia reprezinta textul care va fi afisat in cazul in care imaginea nu se va incarca.  
+Sursa imaginii poate fi fie locala, fie un link catre o imagine de pe internet.
+
+|
+
+# `<a href="">...</a>`
+
+---
+
+Acesta este un tag folosit ca un **link** pe care daca il **apesi**, sa faca diferite lucruri precum: **sa te duca pe alt website**, **sa sune pe cineva**, **sa dea un mail**, etc.
+
+|
+
+# `<button>...</button>`
+
+---
+
+Intuitiv, acesta este un buton pe care il putem apasa.
+
+|
+
+# `<!-- comentariu --> `
+
+---
+
+Acesta este un **comentariu** pe care il putem lasa in cod. El nu influenteaza estetica paginii.
+
+|
+
+# 4.0 - Inspector
+
+|
+
+Inspectorul este o **fereastra** care ne va fi foarte de folos in momentele in care fie vom face debug, fie vrem sa **furam meserie** de pe alte site-uri sau in altele.
+
+---
+
+Il putem deschide in 2 moduri:
+
+1. `RIGHT_CLICK => Inspect`
+2. `CTRL+SHIFT+I` (shortcut-ul)
+
+|
+
+## Sa vorbim pe scurt despre ce ni s-a deschis aici.
+
+In partea din **stanga jos**, avem ceva cu pe care parca l-am mai vazut. Este **fix ce avem si in notepad**. Cand dam **hover** peste orice tag, acesta va fi **hightlight-uit** astfel incat sa ne fie mai usor sa-l gasim pe site.
+
+|
+
+Deasemenea, dupa ce dam **click** pe unul dintre tag-uri, in dreapta ne vor aparea **proprietatile sale CSS**.
+
+---
+
+Mai sunt si alte butoane in acest **Inspector** dar nu consider ca sunt atat de importante incat sa fie discutate in prima lectie.
+
+|
+
+# 5.0 - Final
+
+|
+
+In final, vreau sa te laud pentru **rabdarea** pe care ai avut-o, de a urmari in **totalitate** acest videoclip si sa iti spun ca stiu ca este **foarte multa informatie condensata** in foarte putin timp dar aceasta este doar introducerea.  
+
+---
+
+In viitor te poti astepta la tratarea fiecarui topic mult mai pe larg.
+
+|
+
+Consider ca daca in momentul in care ai inchis videoclip-ul ai **o idee** despre ce am vorbit si **ai retinut macar 10%** din tot ce ti-am prezentat trebuie sa **fii mandru de tine**. Probabil **dupa o zi**, doua, nu o sa iti mai aduci aminte **nici 2%**, ceea ce iar este ok pentru ca, cu timpul si pe masura ce practicam , informatiile se vor sedimenta.
+
+|
+
+`Important este nu sa retii cum am deschis consola, important este sa stii ca in acest videoclip ti-am aratat cum se deschide.`
+
+---
+
+Astfel, in cazul in care vei avea nevoie in viitor de consola, stii unde sa cauti. 

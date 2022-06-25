@@ -5,6 +5,7 @@ import ArrowSVG from './assets/Arrow.svg'
 import ReactMarkdown from 'react-markdown'
 
 import test from './lessons/00_Generals.md'
+import ending from './lessons/ending.md'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism'
@@ -17,6 +18,7 @@ const App = () => {
 	const [index, setIndex] = useState(0)
 
 	const [html, setHTML] = useState('')
+	const [endingText, setEndingText] = useState('')
 
 	//Use componentDidMount(): if class based component to load md file
 	useEffect(() => {
@@ -25,6 +27,11 @@ const App = () => {
 			.then((text) => {
 				setHTML(text)
 			})
+		fetch(ending)
+			.then((data) => data.text())
+			.then((text) => {
+				setEndingText(text)
+			})
 	}, [])
 
 	const markdown = `asdasds asdasdasd asdasdas dasasdasdas asd sasdsad asd asd asdas asd asd asdas`
@@ -32,10 +39,7 @@ const App = () => {
 	const split = html.split('|')
 	// console.log(split)
 
-	split.push(
-		`# You are doing awesome!  You have completed today's lesson!
-		`
-	) // keep going, you are doing great!
+	split.push(endingText) // keep going, you are doing great!
 
 	const handleLeftArrowClick = () => {
 		if (index > 0) setIndex((index) => index - 1)
