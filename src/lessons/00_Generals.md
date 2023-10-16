@@ -6,7 +6,7 @@
 
 --- 
 
-Duoul **HTML & CSS** este tot ce trebuie sa stii pentru a crea primul tau website de la 0. 
+Duo-ul **HTML & CSS** este tot ce trebuie sa stii pentru a crea primul tau website de la 0. 
 
 |
 
@@ -32,7 +32,7 @@ Duoul **HTML & CSS** este tot ce trebuie sa stii pentru a crea primul tau websit
 
 - 1 - **2 display-uri** ( pe unul lucrezi simultan cu mine, iar pe celalalt iti pui videoclipul, pot fi si un monitor si un telefon )
 ---
-- 2 - Sa inveti alaturi de **cel putin un prieten** deoarece va puteti motiva unul pe altul in caz ca unul dintre voi este demotivat, sau ajuta in caz ca v-ati blocat. Lucratul in echipa pentru un programator este un skill destul de important.
+- 2 - Sa inveti alaturi de **cel putin un prieten** deoarece va puteti motiva unul pe altul in caz ca unul dintre voi este demotivat, sau ajuta in caz ca v-ati blocat. Lucratul in echipa pentru un programator este un skill **foarte** de important.
 
 |
 
@@ -259,7 +259,7 @@ Pentru a va da cat mai multe exemple de tag-uri va voi arata template-ul oricare
 ---
 
 Toate documentele HTML trebuie sa inceapa cu declararea doctype-ului, acest tag ii ofera browser-ului informatii despre ce **versiune HTML** va utiliza site-ul.  
-Site-ul poate functiona si fara dar in functie de cat de vechi este browser-ul cu ajutorul caruia rulam site-ul si ce tag-uri folosim, s-ar putea sa aibe bug-uri.
+Pe versiunile noi ale browserelor, site-ul poate rula si fara *<!DOCTYPE html>*, insa nu este recomandat sa ne bazam pe faptul ca toti userii vor folosi cele mai noi versiuni, astfel, tag-ul *<!DOCTYPE>* devine obligatoriu.
 
 |
 
@@ -286,7 +286,7 @@ Tag-ul *head* este un tag folosit pentru a ii oferi browser-ului **informatii** 
 
 ---
 
-Tag-ul acesta este folosit pentru a ii da un **titlu website**-ului care se vede sus, in bara de navigare, vom testa asta imediat ce vom trece inapoi la text editor.
+Tag-ul acesta este folosit pentru a ii da un **titlu website**-ului care se vede sus, in bara de navigare.
 
 |
 
@@ -294,13 +294,7 @@ Tag-ul acesta este folosit pentru a ii da un **titlu website**-ului care se vede
 
 ---
 
-In interiorul acestui tag va fi scris tot site-ul, toate paragrafele, toate imaginile, toate butoanele, etc. vor fi in interiorul acestui tag, simplificat, toata partea vizuala.
-
-|
-
-Ok, acum ca stim toate astea, urmeaza intrebarea fireasca:
-
----
+In interiorul acestui tag va fi scris tot site-ul. Paragrafele, imaginile, butoanele, etc. vor fi in interiorul acestui tag, simplificat, toata partea vizuala.
 
 |
 
@@ -334,15 +328,11 @@ Toate tag-urile pot fi **stilizate**, in foarte multe moduri, ex: schimbam culoa
 
 |
 
-Nu ne-am mai atins de acel **text editor** de cand am afisat un text pe website, de cand nici **nu stiam de existenta tag-urilor** si ar cam fi cazul.
+Mai devreme am zis ca toate website-urile **trebuie sa aibe acel template**. Daca **TREBUIE**, atunci m-am contrazis singur prin faptul ca am afisat text-ul pe website pentru ca, dupa cum vedeti, template-ul nu exista.
 
 |
 
-Mai devreme am zis ca toate website-urile **trebuie sa aibe acel template**. Daca **TREBUIE**, atunci m-am contrazis singur prin faptul ca am afisat text-ul pe website fara nici un tag *<DOCTYPE>* sau *<html></html>* sau *<body></body>*. 
-
-|
-
-Totul functioneaza multumita **magiei** pe care *Google Chrome* o face, **completand** singur cu tag-urile care lipsesc, daca o sa intram in tool-ul de **inspect** al site-ului o sa vedem aceasta auto completare.   
+Totul functioneaza multumita **"magiei"** pe care *Google Chrome* o face, **completand** singur cu tag-urile care lipsesc, daca o sa intram in tool-ul de **inspect** al site-ului o sa vedem aceasta auto completare.   
 
 ---
 
@@ -350,15 +340,11 @@ Versiunile mai vechi nu fac asta insa aici va trebui: fie sa ma credeti pe cuvan
 
 |
 
-Ok, acum vom inlocui text-ul cu acel template al oricarui website.
+## Acum vom inlocui text-ul cu acel **template** al oricarui website.
 
 |
 
-Si.. functioneaza, acum **am ramas dator** cu testarea tag-ului `<title>...</title>`, haideti sa vedem ce face.  
-
----
-
-Este valabil ca tot timpul **cand vreau sa verific** ce am schimbat voi salva fisierul **CTRL+S** sau **Command+S** si **CTRL+R** in browser.
+Nu uita ca tot timpul **cand vreau sa verific** ce am schimbat voi salva fisierul **CTRL+S** sau **Command+S** si **CTRL+R** in browser.
 
 |
 
@@ -370,7 +356,7 @@ Am sa le iau in ordinea in care le-am scris si am sa le testez.
  
  ---
 
-De mentionat este ca toate tag-urile pe care am sa le incerc in videoclip-ul acesta **vor fi pentru body**-ul paginii web deoarece **toate vor aparea pe website** si in general regula este ca orice apare pe website va fi scris in interiorul tag-ului `<body>...</body>`.
+De mentionat este ca toate tag-urile pe care am sa le incerc in videoclipul acesta **vor fi pentru body-ul** paginii web deoarece **toate vor aparea pe website** si in general regula este ca orice apare pe website va fi scris in interiorul tag-ului `<body>...</body>`.
 
 |
 
@@ -379,7 +365,7 @@ De mentionat este ca toate tag-urile pe care am sa le incerc in videoclip-ul ace
 ---
 
 Dupa cum vedeti este mult **mai mare** si **mai bold-uit** decat un text normal.  
- Acesti parametri precum **marimea fontului** sau **culoarea** sau **orice altceva** ne putem inchipui, pot fi modificati cu *CSS* astfel incat sa arate **fix cum ne dorim**. 
+Acesti parametri precum **marimea fontului** sau **culoarea** sau **orice altceva** ne putem inchipui, pot fi modificati cu *CSS* astfel incat sa arate **fix cum ne dorim**. 
 
  |
 
