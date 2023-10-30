@@ -4,12 +4,13 @@ import { COLORS } from './vars'
 import ArrowSVG from './assets/Arrow.svg'
 import ReactMarkdown from 'react-markdown'
 
-import test from './lessons/00_Generals.md'
+import lesson from './lessons/00_Generals.md'
 import ending from './lessons/ending.md'
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { useEffect } from 'react'
+import { useKeyDown } from './useKeyDown.js'
 
 const App = () => {
 	/*
@@ -20,9 +21,15 @@ const App = () => {
 	const [html, setHTML] = useState('')
 	const [endingText, setEndingText] = useState('')
 
-	//Use componentDidMount(): if class based component to load md file
+	const keys = ['ArrowRight', 'ArrowLeft']
+
+	useKeyDown((event) => {
+		if (event.key === 'ArrowRight') handleRightArrowClick()
+		if (event.key === 'ArrowLeft') handleLeftArrowClick()
+	}, keys)
+
 	useEffect(() => {
-		fetch(test)
+		fetch(lesson)
 			.then((data) => data.text())
 			.then((text) => {
 				setHTML(text)
@@ -34,12 +41,9 @@ const App = () => {
 			})
 	}, [])
 
-	const markdown = `asdasds asdasdasd asdasdas dasasdasdas asd sasdsad asd asd asdas asd asd asdas`
+	const split = html.split('~~~')
 
-	const split = html.split('|')
-	// console.log(split)
-
-	split.push(endingText) // keep going, you are doing great!
+	split.push(endingText) // keep going, you are doing great! message
 
 	const handleLeftArrowClick = () => {
 		if (index > 0) setIndex((index) => index - 1)
@@ -52,11 +56,13 @@ const App = () => {
 	return (
 		<Container>
 			<MainCard>
+				{/* Progress bar */}
 				<PrograssBar>
 					<ProgressBarContent
 						percentage={((index + 1) * 100) / split.length}
 					></ProgressBarContent>
 				</PrograssBar>
+				{/* Slider */}
 				<Slider>
 					{split.map((item, i) => (
 						<SliderItem
@@ -70,12 +76,6 @@ const App = () => {
 									backgroundColor: 'red',
 								}}
 								components={{
-									// code: ({ node, ...props }) => (
-									// 	<span
-									// 		style={{ backgroundColor: 'green' }}
-									// 		{...props}
-									// 	/>
-									// ),
 									code({
 										node,
 										inline,
@@ -146,24 +146,8 @@ const App = () => {
 							/>
 						</SliderItem>
 					))}
-
-					{/* <SyntaxHighlighter
-						customStyle={{ maxHeight: '100px', width: '100%' }}
-						language='javascript'
-						style={nightOwl}
-					>
-						{`function createStyleObject(classNames, style) {
-  return classNames.reduce((styleObject, className) => {
-    return {...styleObject, ...style[className]};
-  }, {});
-}
-function createStyleObject(classNames, style) {
-  return classNames.reduce((styleObject, className) => {
-    return {...styleObject, ...style[className]};
-  }, {});
-}`}
-					</SyntaxHighlighter> */}
 				</Slider>
+				{/* Arrow controls */}
 				<Controls>
 					<Arrow
 						src={ArrowSVG}
@@ -337,7 +321,7 @@ const StyledReactMarkdown = styled(ReactMarkdown)`
 	text-align: center;
 	width: 100%;
 `
-const StyledBoldSpan = styled.p`
+const StyledBoldSpan = styled.span`
 	display: inline;
 	font-weight: 800;
 	color: ${COLORS.pink};

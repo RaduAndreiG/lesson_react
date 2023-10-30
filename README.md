@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Web based application for displaying a slideshow
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+### Disclaimers
 
-In the project directory, you can run:
+> This application is not finished and most likely will not receive any updates in the near future, as I abandoned it in favor of other projects. However, I will keep it here, as a reminder of my progress. 
 
-### `npm start`
+> It was not supposed to be a public project, so the code is not clean at all, but it functions as intended.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a web based application for **displaying a slideshow**, very useful for teaching purposes, especially for **video tutorials**. It displays the content of a markup file split between multiple pages.
 
-### `npm test`
+## Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Application Preview](/public/Preview.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### The idea
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+It all started with the question: **How can I consolidate my web development skills, help others, be helped by others, and overall build a network of people?**. There were multiple ways of achieving this, but most of them were **not time efficient**, which for me, is **the most important thing**. In the end, out of all the options, I chose to **create web development tutorials** because it **checks all the points** from the questoin + it's **time efficient**. Having this scope in mind, all I needed was **a plan to execute** it. After some research, I chose **not to add too much editing**, because it is **time consuming**, I would rather just make some cuts, in case I stutter. This was achievable only if I could **fit into my display all the things I needed**: a browser, a code editor, and some kind of written structure, so I don't deviate too much while explaining. Finally, I chose to create this kind of application, which would allow me to **display a slideshow** with the content I need in a very compact way.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Unfortunately, none of the tutorials I made reached YouTube, so this project's only purpose is to be a part of my **personal projects**.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Techlonogies used:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React**
+- **Markdown**
+- **React Markdown**
+- **React Syntax Highlighter**
+- **Styled Components**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features:
+- Display the content of a **markdown file** split between multiple slides
+- Custom `Night Owl` **syntax highlighting** for code blocks
+- **Custom styling** for elements
+- Use **Left** and **Right** Arrows to navigate between slides ( browser focused )
+- **Completeness level** ( left vertical line )
+- **Ending custom slide**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Installation and Instructions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+2. Run `npm install` to install all the dependencies.
 
-### Code Splitting
+### Run the application
+1. Run `npm start` to start the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Change the lesson displayed
 
-### Analyzing the Bundle Size
+1. Open `src -> lessons` folder
+2. Create a new `.md` file with the content you want
+3. Open `src -> App.js` file
+4. On the line `import lesson from './lessons/00_Generals.md'`, change `00_Generals.md` with the file name you created at **step 2**, including the extension `.md`
+5. Save the file and the application will automatically reload
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Change the ending slide
 
-### Making a Progressive Web App
+Edit `src -> lessons -> ending.md` using markup instructions from below
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Markup instructions
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- All the [basic markup syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) applies
+- Use `~~~` to separate slides
