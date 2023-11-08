@@ -10,7 +10,12 @@
 
 ### The application
 
-This is a web based application for **displaying a slideshow**, very useful for teaching purposes, especially for **video tutorials**. It displays the content of a markup file split between multiple pages.
+This is a web based application for **displaying a slideshow**, very useful for teaching purposes, especially for **video tutorials**. It displays the content of a markup file split between multiple pages. This application is supposed to be placed on 1/4 of the desktop, on the rest being the code editor and the browser, in such a manner that all of these fit into a 1920x1080 display.
+
+### Live Demo
+
+You can see a live demo [here](https://lesson.adxiom.com)
+
 
 ## Preview
 
