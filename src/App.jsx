@@ -265,11 +265,11 @@ const Slider = styled.div`
 		left: 0;
 		width: 50px;
 		height: 100%;
-		background: rgb(12, 16, 21);
+		background: rgb(4, 15, 33);
 		background: linear-gradient(
 			90deg,
-			rgba(12, 16, 21, 1) 0%,
-			rgba(12, 16, 21, 0) 100%
+			rgba(4, 15, 33, 1) 0%,
+			rgba(4, 15, 33, 0) 100%
 		);
 		z-index: 1;
 	}
@@ -280,11 +280,11 @@ const Slider = styled.div`
 		right: 0;
 		width: 50px;
 		height: 100%;
-		background: rgb(12, 16, 21);
+		background: rgb(4, 15, 33);
 		background: linear-gradient(
 			270deg,
-			rgba(12, 16, 21, 1) 0%,
-			rgba(12, 16, 21, 0) 100%
+			rgba(4, 15, 33, 1) 0%,
+			rgba(4, 15, 33, 0) 100%
 		);
 		z-index: 1;
 	}
